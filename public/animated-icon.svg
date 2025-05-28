@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="120" viewBox="0 0 360 120">
+  <style>
+    .bus { stroke: #222; stroke-width: 8; }
+    .bit { fill: #0ff; }
+  </style>
+
+  <!-- Canal de datos: 4 líneas paralelas -->
+  <line x1="20" y1="30" x2="340" y2="30" class="bus"/>
+  <line x1="20" y1="60" x2="340" y2="60" class="bus"/>
+  <line x1="20" y1="90" x2="340" y2="90" class="bus"/>
+
+  <!-- Bits animados en cada línea -->
+  <circle class="bit" r="6">
+    <animateMotion dur="2s" repeatCount="indefinite" path="M20,30 H340"/>
+  </circle>
+  <circle class="bit" r="6">
+    <animateMotion dur="2.5s" repeatCount="indefinite" path="M20,60 H340" begin="0.5s"/>
+  </circle>
+  <circle class="bit" r="6">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M20,90 H340" begin="1s"/>
+  </circle>
+</svg>

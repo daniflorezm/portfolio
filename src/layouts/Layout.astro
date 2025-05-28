@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 ---
 
@@ -13,10 +14,11 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Daniel Florez Personal Website</title>
   </head>
-  <body class="hero-background">
+  <body>
     <div>
       <Header />
       <slot />
+      <Footer />
     </div>
   </body>
 </html>
@@ -27,29 +29,7 @@ import "../styles/global.css";
     margin: 0;
     width: 100%;
     height: 100%;
-    background: #3141f5;
-    line-height: 1.5;
-  }
-  .hero-background {
-    position: relative;
+    overflow: auto;
     background: linear-gradient(to bottom, #0f0f1a, #08121f);
-    min-height: 100vh;
-    overflow: hidden;
-  }
-
-  .hero-background::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
-    z-index: 0;
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 5rem 1.5rem;
   }
 </style>

@@ -1,31 +1,38 @@
----
-import astroLogo from "../assets/astro.svg";
-import background from "../assets/background.svg";
----
-
 <header
   class="w-full sticky top-0 z-50 bg-[#172b52]/50 backdrop-blur-md transition-all duration-300"
 >
-  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-center items-center">
-    <div class="flex gap-x-10 items-center">
+  <nav class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-32 py-4 overflow-x-auto">
+    <div
+      class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-x-10"
+    >
       <a
-        class="text-white font-semibold hover:bg-white/5 rounded-md px-4 py-2 transition-colors"
-        href="/">Daniel Flórez</a
+        href="#sobre-mi"
+        onclick="event.preventDefault(); document.getElementById('sobre-mi')?.scrollIntoView({ behavior: 'smooth', block: 'start' })"
+        class="text-white font-semibold hover:bg-white/5 rounded-md px-3 py-2 transition-colors whitespace-nowrap"
       >
+        Sobre mí
+      </a>
       <a
-        class="text-white font-semibold hover:bg-white/5 rounded-md px-4 py-2 transition-colors"
-        href="/servicios">Servicios</a
+        href="#servicios"
+        onclick="event.preventDefault(); document.getElementById('servicios')?.scrollIntoView({ behavior: 'smooth', block: 'start' })"
+        class="text-white font-semibold hover:bg-white/5 rounded-md px-3 py-2 transition-colors whitespace-nowrap"
       >
+        Servicios
+      </a>
       <a
-        class="text-white font-semibold hover:bg-white/5 rounded-md px-4 py-2 transition-colors"
-        href="/proyectos">Proyectos</a
+        href="#proyectos"
+        onclick="event.preventDefault(); document.getElementById('proyectos')?.scrollIntoView({ behavior: 'smooth', block: 'start' })"
+        class="text-white font-semibold hover:bg-white/5 rounded-md px-3 py-2 transition-colors whitespace-nowrap"
       >
+        Proyectos
+      </a>
       <a
-        class="text-white font-semibold hover:bg-white/5 rounded-md px-4 py-2 transition-colors"
-        href="/contacto">Contacto</a
+        href="#contacto"
+        onclick="event.preventDefault(); document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth', block: 'start' })"
+        class="text-white font-semibold hover:bg-white/5 rounded-md px-3 py-2 transition-colors whitespace-nowrap"
       >
+        Contacto
+      </a>
     </div>
   </nav>
 </header>
-
-<style></style>

@@ -8,44 +8,32 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <section id="sobre-mi" class="bg-gradient-to-b from-gray-900 to-black py-20">
     <div
-      class="container mx-auto flex flex-col md:flex-row items-center md:items-center gap-20 px-20 text-white"
+      class="container mx-auto flex flex-col md:flex-row items-center gap-20 px-8 lg:px-20 text-white"
     >
-      <div class="w-90 h-100 flex flex-col flex-shrink-0">
+      <div class="w-full md:w-1/3 flex-shrink-0 select-none">
         <img
-          src="daniel-portfolio.jpeg"
+          src="/daniel-portfolio.jpeg"
           alt="Daniel Flórez"
-          class="w-full h-full object-cover rounded-lg shadow-lg mask-b-from-50% mask-b-to-100% pb-1.5"
+          class="w-full h-[500px] object-cover rounded-lg shadow-lg"
         />
-        <div
-          class="flex flex-row justify-center items-center gap-4 select-none"
-        >
-          <p class="py-2 text-2xl font-black text-blue-400">
-            Fullstack Developer
-          </p>
-          <img
-            src="developer-icon.svg"
-            alt="Developer Icon"
-            class="w-10 h-10"
-          />
+        <div class="flex justify-center items-center gap-4 mt-4 select-none">
+          <p class="text-2xl font-black text-blue-400">Fullstack Developer</p>
+          <img src="/developer-icon.svg" alt="" class="w-10 h-10" />
         </div>
       </div>
-      <div class="text-center md:text-left select-none">
+
+      <div class="w-full md:w-1/3 text-center md:text-left select-none">
         <h1 class="text-3xl font-bold mb-4">
           Soy <span class="text-blue-400">Daniel Flórez</span>
         </h1>
-        <p class="text-xl text-gray-100 max-w-md font-semibold">
-          Desarrollador y la solución para tus problemas digitales. Si necesitas
-          un sitio web, o cualquier tipo de software para tu negocio... háblame.
+        <p class="text-xl text-gray-100 max-w-md font-semibold leading-relaxed">
+          Desarrollo webs y sistemas para pequeños y medianos negocios que
+          quieren digitalizarse sin complicaciones.
         </p>
       </div>
-      <div
-        class="flex justify-center m-auto items-center w-70 h-80 select-none"
-      >
-        <img
-          src="animated-icon.svg"
-          alt="Developer Icon 2"
-          class="select-none"
-        />
+
+      <div class="w-full md:w-1/3 flex justify-center items-center select-none">
+        <img src="/animated-icon.svg" alt="" class="w-56 h-56" />
       </div>
     </div>
   </section>
@@ -92,7 +80,7 @@ import Layout from "../layouts/Layout.astro";
         <span
           class="flex justify-center text-2xl text-white font-bold z-0 pb-1 select-none"
         >
-          Software personalizado
+          Aplicaciones
         </span>
       </div>
       <div
@@ -108,7 +96,7 @@ import Layout from "../layouts/Layout.astro";
         <span
           class="flex justify-center text-2xl text-white font-bold z-0 pb-1 select-none"
         >
-          Clases de programación
+          Mentoría
         </span>
       </div>
       <div
@@ -144,11 +132,11 @@ import Layout from "../layouts/Layout.astro";
       class="grid grid-cols-1 md:grid-cols-2 gap-y-20 gap-x-20 justify-items-center"
     >
       <div
-        class="flex flex-col w-100 xl:w-[800px] h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950"
+        class="flex flex-col w-full xl:w-[800px] h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950"
       >
         <div class="w-auto h-[45%] overflow-hidden border rounded-t-3xl">
           <video muted autoplay loop class="w-full h-full object-cover">
-            <source src="constructifyvideo.mp4" type="video/mp4" />
+            <source src="/constructifyvideo.mp4" type="video/mp4" />
             Tu navegador no soporta el video.
           </video>
         </div>
@@ -178,7 +166,7 @@ import Layout from "../layouts/Layout.astro";
       >
         <div class="w-auto h-[45%] overflow-hidden border rounded-t-3xl">
           <video muted autoplay loop class="w-full h-full object-cover">
-            <source src="loguavideo.mp4" type="video/mp4" />
+            <source src="/loguavideo.mp4" type="video/mp4" />
             Tu navegador no soporta el video.
           </video>
         </div>
@@ -208,7 +196,7 @@ import Layout from "../layouts/Layout.astro";
       >
         <div class="w-auto h-[45%] overflow-hidden border rounded-t-3xl">
           <video muted autoplay loop class="w-full h-full object-cover">
-            <source src="icardvideo.mp4" type="video/mp4" />
+            <source src="/icardvideo.mp4" type="video/mp4" />
             Tu navegador no soporta el video.
           </video>
         </div>
@@ -236,7 +224,7 @@ import Layout from "../layouts/Layout.astro";
       >
         <div class="w-auto h-[45%] overflow-hidden border rounded-t-3xl">
           <video muted autoplay loop class="w-full h-full object-cover">
-            <source src="filetmignonvideo.mp4" type="video/mp4" />
+            <source src="/filetmignonvideo.mp4" type="video/mp4" />
             Tu navegador no soporta el video.
           </video>
         </div>

@@ -37,210 +37,201 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
-  <section
-    id="servicios"
-    class="bg-gradient-to-b from-gray-900 to-black py-20 px-4 sm:px-6 lg:py-40"
-  >
-    <div>
+  <section id="servicios" class="bg-gradient-to-b from-gray-900 to-black py-20">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2
         class="text-3xl font-semibold text-center text-white select-none mb-20"
       >
         Mis Servicios
       </h2>
-    </div>
-    <div
-      class="grid grid-cols-1 md:grid-cols-3 xl:w-[1280px] justify-center items-center gap-5 justify-items-stretch mx-auto"
-    >
-      <div
-        class="flex flex-col md:col-span-2 justify-center border rounded-full border-blue-950 overflow-hidden"
-      >
-        <div class="flex w-full h-40 justify-center items-center">
-          <img
-            src="servicios-web.jpg"
-            alt="Servicios Web"
-            class="object-cover shadow-lg"
-          />
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Páginas web ocupa 2 columnas en md+ -->
+        <div class="md:col-span-2 flex flex-col items-center overflow-visible">
+          <div
+            class="w-full h-40 overflow-hidden rounded-full border border-blue-950"
+          >
+            <img
+              src="servicios-web.jpg"
+              alt="Páginas web"
+              class="w-full h-full object-cover shadow-lg"
+            />
+          </div>
+          <span
+            class="mt-4 block text-center text-2xl text-white font-bold whitespace-normal break-words px-6"
+          >
+            Páginas web
+          </span>
         </div>
-        <span
-          class="flex justify-center text-2xl text-white font-bold z-0 pb-1 select-none"
-        >
-          Páginas web
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-center border rounded-full border-blue-950 overflow-hidden"
-      >
-        <div class="flex w-full h-40 justify-center items-center">
-          <img
-            src="servicios-software.jpg"
-            alt="Servicios Otros"
-            class="object-cover shadow-lg"
-          />
+
+        <!-- Aplicaciones -->
+        <div class="flex flex-col items-center overflow-visible">
+          <div
+            class="w-full h-40 overflow-hidden rounded-full border border-blue-950"
+          >
+            <img
+              src="servicios-software.jpg"
+              alt="Aplicaciones"
+              class="w-full h-full object-cover shadow-lg"
+            />
+          </div>
+          <span
+            class="mt-4 block text-center text-2xl text-white font-bold whitespace-normal break-words px-6"
+          >
+            Aplicaciones
+          </span>
         </div>
-        <span
-          class="flex justify-center text-2xl text-white font-bold z-0 pb-1 select-none"
-        >
-          Aplicaciones
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-center border rounded-full border-blue-950 overflow-hidden"
-      >
-        <div class="flex w-full h-40 justify-center items-center">
-          <img
-            src="servicios-class.jpg"
-            alt="Servicios Clases"
-            class="object-cover shadow-lg"
-          />
+
+        <!-- Mentoría -->
+        <div class="flex flex-col items-center overflow-visible">
+          <div
+            class="w-full h-40 overflow-hidden rounded-full border border-blue-950"
+          >
+            <img
+              src="servicios-class.jpg"
+              alt="Mentoría"
+              class="w-full h-full object-cover shadow-lg"
+            />
+          </div>
+          <span
+            class="mt-4 block text-center text-2xl text-white font-bold whitespace-normal break-words px-6"
+          >
+            Mentoría
+          </span>
         </div>
-        <span
-          class="flex justify-center text-2xl text-white font-bold z-0 pb-1 select-none"
-        >
-          Mentoría
-        </span>
-      </div>
-      <div
-        class="flex flex-col md:col-span-2 justify-center border rounded-full border-blue-950 overflow-hidden"
-      >
-        <div class="flex w-full h-40 justify-center items-center">
-          <img
-            src="servicios-other.jpg"
-            alt="Servicios WebApp"
-            class="object-cover shadow-lg mask-b-from-50 mask-b-to-100%"
-          />
+
+        <!-- Otros servicios ocupa 2 columnas en md+ -->
+        <div class="md:col-span-2 flex flex-col items-center overflow-visible">
+          <div
+            class="w-full h-40 overflow-hidden rounded-full border border-blue-950"
+          >
+            <img
+              src="servicios-other.jpg"
+              alt="Otros servicios"
+              class="w-full h-full object-cover shadow-lg"
+            />
+          </div>
+          <span
+            class="mt-4 block text-center text-2xl text-white font-bold whitespace-normal break-words px-6"
+          >
+            Otros servicios
+          </span>
         </div>
-        <span
-          class="flex justify-center text-2xl text-white font-bold z-0 pb-1 select-none"
-        >
-          Otros servicios
-        </span>
       </div>
     </div>
   </section>
-  <section
-    id="proyectos"
-    class="bg-gradient-to-b from-gray-900 to-black py-20 px-4 sm:px-6 lg:px-32"
-  >
-    <div>
+  <section id="proyectos" class="bg-gradient-to-b from-gray-900 to-black py-20">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2
         class="text-3xl font-semibold text-center text-white select-none mb-20"
       >
         Algunos Proyectos
       </h2>
-    </div>
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 gap-y-20 gap-x-20 justify-items-center max-w-screen-xl mx-auto"
-    >
-      <div
-        class="flex flex-col w-full xl:w-[800px] h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950"
-      >
-        <div class="w-auto h-[45%] overflow-hidden border rounded-t-3xl">
-          <video muted autoplay loop class="w-full h-full object-cover">
-            <source src="/constructifyvideo.mp4" type="video/mp4" />
-            Tu navegador no soporta el video.
-          </video>
-        </div>
-        <div class="p-7 flex flex-col flex-1 items-center select-none">
-          <div>
-            <h2 class="text-3xl font-bold mb-4 text-blue-400">Constructify</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Constructify -->
+        <div
+          class="flex flex-col w-full h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950 overflow-hidden"
+        >
+          <div class="h-[45%] w-full overflow-hidden rounded-t-3xl border">
+            <video muted autoplay loop class="w-full h-full object-cover">
+              <source src="/constructifyvideo.mp4" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+          <div class="p-7 flex flex-col flex-1 items-center select-none">
+            <h3 class="text-3xl font-bold mb-4 text-blue-400">Constructify</h3>
             <p class="text-xl font-semibold text-gray-100 max-w-md">
               Aplicación para la administración de una empresa constructora
               desde la que se pueden crear facturas, gestionar personal,
               exportarlas a distintos formatos (excel, pdf...), organizar las
               facturas por trimestre y fecha, etc.
             </p>
-          </div>
-          <div class="flex justify-center gap-6 mt-auto">
-            <img src="typescript.svg" alt="Developer Icon" class="w-10 h-10" />
-            <img src="nodejs.svg" alt="Developer Icon" class="w-10 h-10" />
-            <img
-              src="ant-design-dark-theme.svg"
-              alt="Developer Icon"
-              class="w-10 h-10"
-            />
+            <div class="flex justify-center gap-6 mt-auto">
+              <img src="typescript.svg" alt="TS" class="w-10 h-10" />
+              <img src="nodejs.svg" alt="Node.js" class="w-10 h-10" />
+              <img
+                src="ant-design-dark-theme.svg"
+                alt="AntD"
+                class="w-10 h-10"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="flex flex-col w-full xl:w-[800px] h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950"
-      >
-        <div class="w-auto h-[45%] overflow-hidden border rounded-t-3xl">
-          <video muted autoplay loop class="w-full h-full object-cover">
-            <source src="/loguavideo.mp4" type="video/mp4" />
-            Tu navegador no soporta el video.
-          </video>
-        </div>
-        <div class="p-7 flex flex-col flex-1 items-center select-none">
-          <div>
-            <h2 class="text-3xl font-bold mb-4 text-blue-400">Logua</h2>
+
+        <!-- Logua -->
+        <div
+          class="flex flex-col w-full h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950 overflow-hidden"
+        >
+          <div class="h-[45%] w-full overflow-hidden rounded-t-3xl border">
+            <video muted autoplay loop class="w-full h-full object-cover">
+              <source src="/loguavideo.mp4" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+          <div class="p-7 flex flex-col flex-1 items-center select-none">
+            <h3 class="text-3xl font-bold mb-4 text-blue-400">Logua</h3>
             <p class="text-xl font-semibold text-gray-100 max-w-md">
               Página web para la marca personal Logua, desde la que se puede
               visualizar todos los servicios ofrecidos por la marca tales como
               Tecnologua, BarberLogua y la UrbanStore.
             </p>
-          </div>
-          <div class="flex justify-center gap-6 mt-auto">
-            <img
-              src="nextjs_icon_dark.svg"
-              alt="Developer Icon"
-              class="w-10 h-10"
-            />
-            <img src="materialui.svg" alt="Developer Icon" class="w-10 h-10" />
-            <img src="html5.svg" alt="Developer Icon" class="w-10 h-10" />
-            <img src="css_old.svg" alt="Developer Icon" class="w-10 h-10" />
+            <div class="flex justify-center gap-6 mt-auto">
+              <img src="nextjs_icon_dark.svg" alt="Next.js" class="w-10 h-10" />
+              <img src="materialui.svg" alt="MUI" class="w-10 h-10" />
+              <img src="html5.svg" alt="HTML5" class="w-10 h-10" />
+              <img src="css_old.svg" alt="CSS" class="w-10 h-10" />
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="flex flex-col w-full xl:w-[800px] h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950"
-      >
-        <div class="w-auto h-[45%] overflow-hidden border rounded-t-3xl">
-          <video muted autoplay loop class="w-full h-full object-cover">
-            <source src="/icardvideo.mp4" type="video/mp4" />
-            Tu navegador no soporta el video.
-          </video>
-        </div>
-        <div class="p-7 flex flex-col flex-1 items-center select-none">
-          <div>
-            <h2 class="text-3xl font-bold mb-4 text-blue-400">iCard</h2>
+
+        <!-- iCard -->
+        <div
+          class="flex flex-col w-full h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950 overflow-hidden"
+        >
+          <div class="h-[45%] w-full overflow-hidden rounded-t-3xl border">
+            <video muted autoplay loop class="w-full h-full object-cover">
+              <source src="/icardvideo.mp4" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+          <div class="p-7 flex flex-col flex-1 items-center select-none">
+            <h3 class="text-3xl font-bold mb-4 text-blue-400">iCard</h3>
             <p class="text-xl font-semibold text-gray-100 max-w-md">
-              Aplicación para la gestión de un restaurante.<br /> Desde el cliente
-              se puede ver la carta, realizar pedidos, ver el estado de los pedidos,
-              pedir la cuenta, etc. <br /> Desde el administrador se puede realizar
-              las mismas operaciones del cliente, gestionar mesas y stock de productos,
-              asi como personal, etc.
+              Aplicación para la gestión de un restaurante desde la que se
+              administra comandas, personal, mesas, pedidos y más.
             </p>
-          </div>
-          <div class="flex justify-center gap-6 mt-auto">
-            <img src="javascript.svg" alt="Developer Icon" class="w-10 h-10" />
-            <img src="react_light.svg" alt="Developer Icon" class="w-10 h-10" />
-            <img src="python.svg" alt="Developer Icon" class="w-10 h-10" />
-            <img src="django.svg" alt="Developer Icon" class="w-10 h-10" />
+            <div class="flex justify-center gap-6 mt-auto">
+              <img src="javascript.svg" alt="JS" class="w-10 h-10" />
+              <img src="react_light.svg" alt="React" class="w-10 h-10" />
+              <img src="python.svg" alt="Python" class="w-10 h-10" />
+              <img src="django.svg" alt="Django" class="w-10 h-10" />
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="flex flex-col w-full xl:w-[800px] h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950"
-      >
-        <div class="w-auto h-[45%] overflow-hidden border rounded-t-3xl">
-          <video muted autoplay loop class="w-full h-full object-cover">
-            <source src="/filetmignonvideo.mp4" type="video/mp4" />
-            Tu navegador no soporta el video.
-          </video>
-        </div>
-        <div class="p-7 flex flex-col flex-1 items-center select-none">
-          <div>
-            <h2 class="text-3xl font-bold mb-4 text-blue-400">Filet Mignon</h2>
+
+        <!-- Filet Mignon -->
+        <div
+          class="flex flex-col w-full h-[820px] bg-gradient-to-b from-gray-900 to-black border rounded-3xl border-blue-950 overflow-hidden"
+        >
+          <div class="h-[45%] w-full overflow-hidden rounded-t-3xl border">
+            <video muted autoplay loop class="w-full h-full object-cover">
+              <source src="/filetmignonvideo.mp4" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+          <div class="p-7 flex flex-col flex-1 items-center select-none">
+            <h3 class="text-3xl font-bold mb-4 text-blue-400">Filet Mignon</h3>
             <p class="text-xl font-semibold text-gray-100 max-w-md">
               Página web para la compañía de eventos de catering y bodas Filet
               Mignon, desde la que se puede visualizar todos los servicios
               ofrecidos para los distintos eventos.
             </p>
-          </div>
-          <div class="flex justify-center gap-6 mt-auto">
-            <img src="svelte.svg" alt="Developer Icon" class="w-10 h-10" />
-            <img src="html5.svg" alt="Developer Icon" class="w-10 h-10" />
-            <img src="css_old.svg" alt="Developer Icon" class="w-10 h-10" />
+            <div class="flex justify-center gap-6 mt-auto">
+              <img src="svelte.svg" alt="Svelte" class="w-10 h-10" />
+              <img src="html5.svg" alt="HTML5" class="w-10 h-10" />
+              <img src="css_old.svg" alt="CSS" class="w-10 h-10" />
+            </div>
           </div>
         </div>
       </div>

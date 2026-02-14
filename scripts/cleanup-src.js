@@ -1,22 +1,39 @@
-import { rmSync, existsSync } from 'fs';
+import { rmSync, existsSync, readdirSync } from 'fs';
 import { join } from 'path';
 
-const srcDir = join(process.cwd(), 'src');
+const cwd = process.cwd();
+console.log('CWD:', cwd);
+console.log('Directory contents:', readdirSync(cwd));
 
-if (existsSync(srcDir)) {
-  console.log('Found src/ directory, removing it...');
-  rmSync(srcDir, { recursive: true, force: true });
-  console.log('Successfully removed src/ directory');
-} else {
-  console.log('No src/ directory found');
+// Check for any pages directory anywhere
+const pagesDir = join(cwd, 'pages');
+const srcPagesDir = join(cwd, 'src', 'pages');
+const srcDir = join(cwd, 'src');
+const nextDir = join(cwd, '.next');
+const cacheDir = join(cwd, 'node_modules', '.cache');
+
+const dirs = [
+  { path: pagesDir, name: 'pages/' },
+  { path: srcPagesDir, name: 'src/pages/' },
+  { path: srcDir, name: 'src/' },
+  { path: nextDir, name: '.next/' },
+  { path: cacheDir, name: 'node_modules/.cache/' },
+];
+
+for (const dir of dirs) {
+  if (existsSync(dir.path)) {
+    console.log(`Found ${dir.name} - removing...`);
+    rmSync(dir.path, { recursive: true, force: true });
+    console.log(`Removed ${dir.name}`);
+  } else {
+    console.log(`No ${dir.name} found`);
+  }
 }
 
-// Also check for any .next cache
-const nextDir = join(process.cwd(), '.next');
-if (existsSync(nextDir)) {
-  console.log('Found .next/ directory, removing it...');
-  rmSync(nextDir, { recursive: true, force: true });
-  console.log('Successfully removed .next/ directory');
+// Also check if app/ exists
+const appDir = join(cwd, 'app');
+if (existsSync(appDir)) {
+  console.log('app/ directory exists:', readdirSync(appDir));
 } else {
-  console.log('No .next/ directory found');
+  console.log('WARNING: app/ directory does NOT exist!');
 }

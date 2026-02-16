@@ -103,7 +103,7 @@ export default function Contact() {
         {/* Footer */}
         <div className="mt-20 pt-8 border-t border-border">
           <p className="text-foreground-muted text-sm">
-            {"2025 DaniDev. Todos los derechos reservados."}
+            {"2025 DaniDev. Con cariño desde Madrid."}
           </p>
         </div>
       </div>

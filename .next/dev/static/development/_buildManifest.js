@@ -6,6 +6,7 @@ self.__BUILD_MANIFEST = {
   },
   "sortedPages": [
     "/_app",
-    "/_error"
+    "/_error",
+    "/api/contact-project"
   ]
 };self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

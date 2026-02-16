@@ -8,8 +8,8 @@ const navLinks = [
   { href: "#por-que", label: "Por que yo" },
   { href: "#contacto", label: "Contacto" },
 ];
-
 export default function Header() {
+
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
